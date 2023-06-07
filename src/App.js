@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import MainScreen from "./pages/MainScreen.js";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Questions from "./pages/QuestionsScreen.js";
+import ResultScreen from "./pages/ResultScreen.js";
+import ReviewScreen from "./pages/ReviewScreen.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "#872657" }}>
+      <Routes>
+        <Route path="/" element={<MainScreen />} />
+        <Route path="/questions" element={<Questions />} />
+        <Route path="/result" element={<ResultScreen />} />
+        <Route path="/review" element={<ReviewScreen />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,7 @@
+export const CHANGE_SCORE = "CHANGE_SCORE";
+
+export const GET_YOUR_ANSWERS = "GET_YOUR_ANSWERS";
+export const GET_CORRECT_ANSWER = "GET_CORRECT_ANSWER";
+export const GET_QUESTION = "GET_QUESTION";
+
+export const RESET_STATE = "RESET_STATE";
