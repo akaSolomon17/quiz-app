@@ -53,7 +53,7 @@ const ReviewScreen = () => {
         }}
       >
         <CardHeader
-          title={currentQuestionIndex + 1}
+          title={`Wrong answer of question ${currentQuestionIndex + 1}`}
           sx={{
             textAlign: "center",
             backgroundColor: "crimson",
@@ -63,7 +63,7 @@ const ReviewScreen = () => {
         />
         <CardContent>
           <Box mb={2}>
-            <Typography variant="h5" mb={1}>
+            <Typography variant="h5" mb={1} alignItems="center">
               Question: {question[currentQuestionIndex]}
             </Typography>
             <Typography variant="h6">
@@ -80,7 +80,6 @@ const ReviewScreen = () => {
             sx={{
               textTransform: "none",
               borderRadius: 100,
-              marginTop: 10,
               marginRight: 1,
               color: "crimson",
               borderColor: "crimson",
@@ -98,7 +97,6 @@ const ReviewScreen = () => {
             sx={{
               textTransform: "none",
               borderRadius: 100,
-              marginTop: 10,
               color: "crimson",
               borderColor: "crimson",
               ":hover": {
